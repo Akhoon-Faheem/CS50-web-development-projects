@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @Akhoon-Faheem
-- 👀 I’m interested in web developing
-- 🌱 I’m currently learning javascript
+- 👀 I love coding as a hobby
 - 💞️ I’m looking to collaborate on web deveploping
 - 📫 How to reach me @akhoonfaheem04@gmail.com 
 - 😄 Pronouns: HE/HIM
