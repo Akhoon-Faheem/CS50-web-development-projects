@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Google search</title>
+    <!--This is to import georama in my font style-->
+    <link href="index.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1> FAHEEM AKHOON</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="About.html">About me</a></li>
-                <li><a href="Skills.html">Skills</a></li>
-                <li><a href="Project.html">Project</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
-            </ul>
-        </nav>
-        <main>
-            <p> <strong>WELCOME TO</strong> <br>My journey of Becoming a Fullstack developer</p>
-
-        </main>
-        <footer>
-            <hr>
-            <p>&copy; Faheem Akhoon All rights reserved</p>
-            <!--
-            <a  class="social"href="https://www.instagram.com/akhoon_faheem/" title="instagram">
-                <img src="iCons/instagram.svg" ></a>
-            <a class="social" href="https://www.linkedin.com/in/faheem-akhoon-aa2ab31b0/" title="LinkedIn">
-                <img src="iCons/linkedin.svg"></a> -->
-        </footer>
-    </header>
+            <nav>
+                <a  href="image-search.html">Images</a>
+                <a href="Advance-search.html">Advance search</a>
+            </nav>
+        
+            <main>
+            <h1>Google</h1>
+            <form action="https://www.Google.com/search" method="get">
+                <div class="bord">
+                <img src="search.svg">
+                <input class="bar" type="text" name="q">
+                </div>
+                <div class="b1">
+                <input class="search" type ="submit" value=" Google search">
+                <input class="lucky" type="submit" name="btnI" value="I'm Feeling Lucky">
+                </div>    
+            </form>
+        </main>  
+    
+    <footer>
+        &copy; 2024 Faheem Akhoon
+    </footer>
 </body>
 </html>
