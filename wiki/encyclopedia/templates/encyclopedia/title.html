@@ -1,0 +1,45 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+
+ {{title_of_page}}
+
+{% endblock %}
+
+{% block body %}
+<nav>
+    <a class="btn" href="{% url 'edit' title_of_page %}">Edit</a>
+</nav>
+<style>
+   
+    nav{
+        margin: 3px;
+        padding: 3px;
+        width:5vw;
+        margin-bottom: 0;
+        position: absolute;
+        display: inline-block;
+        z-index: 10;
+        left: 90%;
+       
+       
+    }
+    .btn{
+        border: 1px solid black;
+        margin: 5px;
+        padding:5px;
+        text-decoration: none;
+        background-color: skyblue;
+        color:white;
+        font-weight: 800;
+        
+    }
+    h1{
+        display: block;
+        position: relative;
+    }
+
+    
+</style>
+    {{f_cont|safe}}
+{% endblock %}

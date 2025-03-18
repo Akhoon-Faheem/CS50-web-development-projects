@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            height: 90%;
+            width: 100%;
+            font-size: 200%;
+            margin: 5px;
+            padding: 3px;
+            text-align: center;
+            color: rgb(86, 67, 42);
+        }
+        nav{
+            text-align: end;
+            margin: 10px;
+            padding: 3px;
+            padding-right: 7px;
+        }
+        .lnk1{
+            border: 1px solid black;
+            text-decoration: none;
+            background-color: skyblue;
+            color:white;
+            padding: 3px;
+            font-weight: 700;
+            margin-right: 50px;
+        }
+        .frm{
+            height: 95%;
+            width:95%;
+            margin:10px;
+            padding: 5px;
+
+        }
+        form{
+            margin:10px;
+            padding: 5px;
+        }
+        label{
+            margin:5px;
+            padding: 2px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        input[type="text"]{
+            border: 2px solid black;
+            padding: 4px;
+            margin-left: 80px;
+            border-radius: 9px;
+            width:80%;
+            height: 35px;
+            font-size: 14px;
+        }
+        textarea{
+            border: 2px solid black;
+            display: block;
+            margin: 7px;
+            padding: 5px;
+            width: 94%;
+            font-size: 16px;
+            min-height: 400px;
+            resize: vertical;
+        }
+        input[type="submit"]{
+            all: unset;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding: 3px;
+            margin-left: 50%;
+            margin-right: 50%;
+            background-color: skyblue;
+            color:white;
+            font-weight: 700;
+            width: 50px;
+            text-align: center;
+        }
+        footer{
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a New Page</h1>
+    <nav>
+        <a class="lnk1" href="{% url 'index' %}">HOME</a>
+    </nav>
+    <div class="frm">
+    <form action="{% url 'create_page' %}" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="SAVE" >
+
+    </form>
+</div>
+<footer>
+<p> <em><strong>Note:</strong>Use Github markdown language syantax to fill in the textarea.
+    If you are not aware, please refer to this link <a target="_blank" href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">click here</a> to know the syntaxt.<br>
+ </em></p>
+</footer>
+</body>
+</html>

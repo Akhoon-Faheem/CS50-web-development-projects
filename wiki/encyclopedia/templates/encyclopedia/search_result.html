@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    search result
+{% endblock %}
+
+{% block body %}
+    <h3>We found some matching results:</h3>
+    <ul>
+    {% for lnk in itb_lis %}
+        <li><a href="{% url 'title' title=lnk %}">{{lnk}}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}
