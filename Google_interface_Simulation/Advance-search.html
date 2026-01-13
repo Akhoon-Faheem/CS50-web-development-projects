@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance search</title>
+    <link href="advance.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h2>Google</h2>
+        <a href="index.html">HOME</a>
+    </nav>
+    <h1>Advance Search</h1>
+    <hr>
+    <form action="https://www.Google.com/search" method="get">
+    <main class="container">
+            <div class="head">
+                <span class="one">Find pages with...</span>
+                <span class="Blank">&nbsp;</span>
+                <span class="two">To do this in search box.</span>
+            </div>
+
+            <div class="fields">
+
+                <div class="querry">
+                    <label  class="label" for="all">all these words:</label>
+                    <input class="box" id="all" value="" type="text" name="as_q" autofocus="autofocus" >
+                    <span class="instruct">type the important words:</span>
+                </div>
+
+                <div class="querry">
+                    <label class="label" for="this">this exact word or phrase:</label>
+                    <input class="box" type="text" id="this" value=""  name="as_epq">
+                    <span class="instruct">put exact word in quotes:</span>
+
+                </div>
+
+                <div class="querry">
+                    <label class="label" for="any">any of these words:</label>
+                    <input class="box" type="text" value=""   id="any" name="as_oq">
+                    <span class="instruct">type OR between all the words you want:</span>
+                </div>
+
+                <div class="querry">
+                    <label class="label" for="none">none of these words:</label>
+                    <input class="box" type="text" value=""  id="none" name="as_eq">
+                    <span class="instruct">put minus before the word you don't want:</span>
+                </div>
+                
+
+
+
+            </div>
+
+        
+    </main>
+    <div class="submit">
+    <input class="sub" type="submit" value="Advance Search">
+</div>
+</form>
+
+<footer>
+    &copy; 2024 Faheem Akhoon
+</footer>
+</body>
+</html>
